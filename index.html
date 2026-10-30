@@ -11,7 +11,7 @@
   <!-- Het menu staat op elke pagina. -->
   <header class="header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">Rayane<span>.</span></a>
+      <a class="logo" href="index.html" aria-label="Rayane, naar de homepage">R</a>
       <button id="menu-button" class="menu-button" type="button" aria-controls="nav-links" aria-expanded="false">Menu</button>
       <nav id="nav-links" class="nav-links" aria-label="Hoofdnavigatie">
         <a href="index.html" aria-current="page">Home</a>
@@ -24,67 +24,60 @@
   </header>
 
   <main class="container">
-    <!-- Introductie -->
-    <section class="hero">
+    <!-- Over mij en een afbeelding staan naast elkaar. -->
+    <section class="hero" id="over-mij">
       <div class="hero-text">
-        <p class="label">MIJN PORTFOLIO</p>
+        <h1>Over mij</h1>
         <p id="greeting">Welkom</p>
-        <h1>Hoi, ik ben <span>Rayane.</span></h1>
-        <p>Ik hou van voetbal en vind game development leuk. Ik maak games op Roblox en werk met Lua scripting en 3D-modellen in Blender.</p>
-        <a class="button" href="projecten.html">Bekijk mijn projecten →</a>
+        <p>Ik ben Rayane. Ik hou van voetbal en vind het leuk om games te maken.</p>
+        <p>Ik maak games op Roblox. Ik gebruik Lua voor scripts en Blender voor 3D-modellen.</p>
+        <p>Op deze website kun je mijn vaardigheden en projecten bekijken.</p>
+
+        <!-- Controleer de voorlopige deadline bij de docent. -->
+        <div class="countdown">
+          <p>Voorlopige deadline: 18 december 2026</p>
+          <div class="count-box" aria-label="Tijd tot de voorlopige deadline">
+            <span><strong id="days">00</strong> dagen</span>
+            <span><strong id="hours">00</strong> uren</span>
+            <span><strong id="minutes">00</strong> min</span>
+            <span><strong id="seconds">00</strong> sec</span>
+          </div>
+        </div>
       </div>
-      <div class="hero-image" role="img" aria-label="Grafische illustratie met de letter R">
-        <span class="image-symbol" aria-hidden="true">R</span>
-        <p>ROBLOX · LUA · BLENDER</p>
+      <div class="hero-image">
+        <img class="hero-photo" src="afbeeldingen/pyroblox.png" alt="Afbeelding van mijn Roblox-game Pyroblox">
       </div>
     </section>
 
-    <!-- Drie onderdelen van mijn portfolio -->
-    <section class="section">
-      <p class="label">ONTDEK MEER</p>
-      <h2>Wat je hier vindt.</h2>
+    <!-- De drie blokken onder de introductie. -->
+    <section class="section" aria-label="Mijn projecten">
       <div class="cards">
         <article class="card">
-          <p class="card-number">01</p>
-          <h3>Vaardigheden</h3>
-          <p>De tools die ik gebruik voor mijn games en modellen.</p>
-          <a href="vaardigheden.html">Bekijk vaardigheden →</a>
+          <img class="project-image" src="afbeeldingen/slice-fruits.png" alt="Afbeelding van Slice Fruits">
+          <h2>Slice Fruits</h2>
+          <p>Een game die ik op Roblox heb gemaakt.</p>
+          <a href="projecten.html">Bekijk mijn projecten</a>
         </article>
         <article class="card">
-          <p class="card-number">02</p>
-          <h3>Projecten</h3>
-          <p>Een plek voor mijn games en 3D-modellen.</p>
-          <a href="projecten.html">Bekijk projecten →</a>
+          <img class="project-image" src="afbeeldingen/pyroblox.png" alt="Afbeelding van Pyroblox">
+          <h2>Pyroblox</h2>
+          <p>Een game die ik op Roblox heb gemaakt.</p>
+          <a href="projecten.html">Bekijk mijn projecten</a>
         </article>
         <article class="card">
-          <p class="card-number">03</p>
-          <h3>Contact</h3>
-          <p>Bekijk mijn contactpagina.</p>
-          <a href="contact.html">Naar contact →</a>
+          <img class="project-image" src="afbeeldingen/dig-for-diamonds.png" alt="Afbeelding van Dig for Diamonds">
+          <h2>Dig for Diamonds</h2>
+          <p>Een game die ik op Roblox heb gemaakt.</p>
+          <a href="projecten.html">Bekijk mijn projecten</a>
         </article>
-      </div>
-    </section>
-
-    <!-- De deadline is voorlopig: controleer hem bij de docent. -->
-    <section class="countdown">
-      <div>
-        <p class="label">OP WEG NAAR DE DEADLINE</p>
-        <h2>Nog even te gaan.</h2>
-        <p>Voorlopige datum: 18 december 2026. Controleer de deadline bij de docent.</p>
-      </div>
-      <div class="count-box" aria-label="Tijd tot de voorlopige deadline">
-        <span><strong id="days">00</strong> dagen</span>
-        <span><strong id="hours">00</strong> uren</span>
-        <span><strong id="minutes">00</strong> min</span>
-        <span><strong id="seconds">00</strong> sec</span>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>Rayane · Portfolio</p>
-      <a href="contact.html">Contact</a>
+      <div><a href="contact.html">Contact</a><br><a href="index.html#over-mij">Over mij</a></div>
+      <p>Copyright © 2026 Rayane</p>
     </div>
   </footer>
 
@@ -103,4 +96,3 @@
   </div>
 </body>
 </html>
-
