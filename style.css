@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  background: #f1f3f5;
+  background: #edf0f2;
   color: #26323c;
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -27,6 +27,7 @@ button { cursor: pointer; }
   gap: 12px;
   padding: 12px 16px;
   border: 1px solid #cbd3da;
+  border-top: 4px solid #365b78;
   background: white;
 }
 .logo {
@@ -62,14 +63,14 @@ button { cursor: pointer; }
   display: flex;
   gap: 28px;
   margin-top: 20px;
-  padding: 28px;
+  padding: 32px;
   border: 1px solid #cbd3da;
   background: white;
 }
 .hero-text, .hero-image { flex: 1; min-width: 0; }
 .hero-image { position: relative; display: flex; align-items: center; }
 .hero-photo, .project-image, .game-image { display: block; width: 100%; height: auto; }
-h1 { margin: 0 0 16px; color: #20394f; font-size: 32px; }
+h1 { margin: 0 0 16px; color: #20394f; font-size: 36px; }
 h2 { margin: 0 0 16px; color: #20394f; font-size: 23px; }
 h3 { color: #20394f; font-size: 20px; }
 .button {
@@ -94,14 +95,20 @@ h3 { color: #20394f; font-size: 20px; }
 .card {
   flex: 1;
   min-width: 0;
-  padding: 16px;
+  padding: 18px;
   border: 1px solid #d5dde3;
-  background: #f8f9fa;
+  background: white;
 }
 .home-card { text-align: center; }
-.card h2, .card h3 { margin: 14px 0 8px; }
+.card h2, .card h3 { margin: 16px 0 8px; }
 .card p { margin: 8px 0 14px; }
+.card a { font-weight: bold; }
 .page-title { padding: 36px 0 12px; }
+.project-list { display: flex; flex-direction: column; gap: 25px; }
+.project-row { display: flex; align-items: center; gap: 24px; padding-bottom: 25px; border-bottom: 1px solid #d5dde3; }
+.project-picture { flex: 3; }
+.project-info { flex: 2; }
+.project-info a { font-weight: bold; }
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; text-align: left; }
 th, td { padding: 12px; border: 1px solid #cbd3da; }
@@ -163,8 +170,10 @@ body.dark .nav-links a:hover, body.dark .nav-links a[aria-current="page"] { back
   .menu-button { display: block; }
   .nav-links { display: none; order: 4; width: 100%; flex-direction: column; }
   .nav-links.open { display: flex; }
-  .hero, .cards, .contact-layout, .cookie-inner { flex-direction: column; }
+  .hero, .cards, .project-row, .contact-layout, .cookie-inner { flex-direction: column; }
+  .project-picture, .project-info { width: 100%; }
   .hero { padding: 20px; }
+  h1 { font-size: 30px; }
   .section { padding: 20px; }
   .count-box { flex-wrap: wrap; }
   .footer .container { flex-direction: column; }
