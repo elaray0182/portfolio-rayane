@@ -80,13 +80,15 @@ button { cursor: pointer; }
   line-height: 1.2;
 }
 .hero-text p { max-width: 500px; }
-.hero-image { position: relative; }
+.hero-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 .hero-photo {
+  display: block;
   width: 100%;
-  height: 100%;
-  min-height: 300px;
-  object-fit: cover;
-  object-position: left;
+  height: auto;
 }
 .button {
   display: inline-block;
@@ -119,18 +121,10 @@ h3 { font-size: 20px; }
 .hero + .section .card { text-align: center; }
 .card h3 { margin: 12px 0; }
 .card p { margin: 10px 0; }
-.project-image {
-  width: 140px;
-  max-width: 100%;
-  height: 80px;
-  object-fit: cover;
-  object-position: left;
-}
-.game-image {
+.project-image, .game-image {
+  display: block;
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  object-position: left;
+  height: auto;
 }
 
 /* De andere pagina's en de tabel */
@@ -202,7 +196,6 @@ body.dark .nav-links a:hover, body.dark .nav-links a[aria-current="page"] { back
   .nav-links { display: none; order: 4; width: 100%; flex-direction: column; }
   .nav-links.open { display: flex; }
   .hero, .cards, .contact-layout, .cookie-inner { flex-direction: column; }
-  .hero-photo { min-height: 220px; }
   .count-box { flex-wrap: wrap; }
   .footer .container { flex-direction: column; }
 }
