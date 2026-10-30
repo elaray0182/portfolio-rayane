@@ -1,0 +1,197 @@
+/* Basis van de pagina */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f6f5f0;
+  color: #1c2923;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a { color: inherit; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* De balk bovenaan */
+.header { border-bottom: 1px solid #d5dbd1; }
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 80px;
+}
+.logo {
+  margin-right: auto;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+.logo span { color: #758f24; }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a { text-decoration: none; }
+.nav-links a:hover, .nav-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.theme-button, .menu-button {
+  padding: 8px 14px;
+  border: 1px solid #aeb8ac;
+  background: transparent;
+  color: inherit;
+}
+.menu-button { display: none; }
+
+/* Introductie op de homepage */
+.hero {
+  display: flex;
+  align-items: stretch;
+  gap: 55px;
+  padding: 75px 0 85px;
+}
+.hero-text { flex: 1; align-self: center; }
+.hero-text h1, .page-title h1 {
+  margin: 10px 0 20px;
+  font-size: 64px;
+  line-height: 1.05;
+  letter-spacing: -3px;
+}
+.hero-text h1 span { color: #718b25; }
+.hero-text p { max-width: 490px; }
+.hero-text #greeting { font-weight: bold; font-size: 14px; }
+.hero-image {
+  flex: 1;
+  min-height: 400px;
+  background: #d2ee7a;
+  color: #1c2923;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  border: 3px solid #1c2923;
+  background: #eef9cb;
+  box-shadow: 15px 15px 0 #93b44a;
+  font-size: 100px;
+  font-weight: bold;
+  transform: rotate(-6deg);
+}
+.hero-image p { margin-top: 35px; font-size: 13px; font-weight: bold; letter-spacing: 2px; }
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 12px;
+  border: 1px solid #1c2923;
+  background: #1c2923;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover { background: #4b6434; }
+
+/* Kaarten en overige inhoud */
+.section { padding: 65px 0; border-top: 1px solid #d5dbd1; }
+h2 { margin: 0 0 25px; font-size: 34px; line-height: 1.15; letter-spacing: -1px; }
+h3 { font-size: 21px; }
+.cards { display: flex; gap: 18px; }
+.card {
+  flex: 1;
+  padding: 28px;
+  background: #e6eadd;
+  border: 1px solid #d5dbd1;
+}
+.card:nth-child(2) { background: #e6e1f2; }
+.card:nth-child(3) { background: #f0e9d1; }
+.card h3 { margin-top: 0; }
+.card a { font-weight: bold; text-underline-offset: 4px; }
+.page-title { padding: 70px 0 30px; max-width: 750px; }
+.page-title p { font-size: 18px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 14px; border-bottom: 1px solid #c8d0c5; }
+th { background: #e6eadd; }
+
+/* Countdown */
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin: 20px 0 80px;
+  padding: 35px;
+  background: #1c2923;
+  color: white;
+}
+.countdown h2 { margin-bottom: 10px; }
+.countdown p { margin-bottom: 0; }
+.count-box { display: flex; gap: 20px; }
+.count-box span { text-align: center; font-size: 12px; }
+.count-box strong { display: block; font-size: 32px; }
+
+/* Contactformulier */
+.contact-layout { display: flex; gap: 60px; }
+.contact-layout > div, .contact-form { flex: 1; }
+.contact-form { padding: 28px; background: #e6eadd; }
+.contact-form label { display: block; margin: 0 0 16px; font-weight: bold; }
+.contact-form input, .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #aeb8ac;
+  background: white;
+  color: #1c2923;
+}
+
+/* Footer en cookiemelding */
+.footer { padding: 35px 0; border-top: 1px solid #d5dbd1; }
+.footer .container { display: flex; justify-content: space-between; gap: 15px; }
+.cookie-box { padding: 22px 0; background: #e6e1f2; color: #1c2923; }
+.cookie-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.cookie-inner p { margin: 5px 0; }
+.cookie-buttons { display: flex; gap: 8px; }
+.cookie-buttons button { padding: 10px 14px; border: 1px solid #1c2923; background: white; }
+.cookie-buttons button:last-child { background: #1c2923; color: white; }
+[hidden] { display: none !important; }
+
+/* Donkere modus */
+body.dark { background: #19231e; color: #f2f4ec; }
+body.dark .header, body.dark .footer, body.dark .section { border-color: #4a584d; }
+body.dark .card, body.dark .contact-form { background: #2b392e; border-color: #4a584d; }
+body.dark th { background: #2b392e; }
+body.dark .button { background: #d2ee7a; color: #1c2923; }
+body.dark .countdown { background: #354639; }
+
+/* Klein scherm: onderdelen onder elkaar */
+@media (max-width: 700px) {
+  .header-inner { flex-wrap: wrap; padding: 15px 0; }
+  .menu-button { display: block; }
+  .nav-links { display: none; order: 4; width: 100%; flex-direction: column; gap: 14px; }
+  .nav-links.open { display: flex; }
+  .hero, .cards, .contact-layout, .countdown, .cookie-inner { flex-direction: column; }
+  .hero { padding: 50px 0; gap: 30px; }
+  .hero-text h1, .page-title h1 { font-size: 48px; }
+  .hero-image { width: 100%; min-height: 300px; }
+  .section { padding: 50px 0; }
+  .countdown { align-items: flex-start; }
+  .footer .container { flex-direction: column; }
+}
+
+/* Voorbeeld van position: relative, zoals gevraagd in de opdracht. */
+.hero-image { position: relative; }
+body.dark .hero-text h1 span { color: #d2ee7a; }

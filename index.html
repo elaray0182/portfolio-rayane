@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Rayane</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Het menu staat op elke pagina. -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Rayane<span>.</span></a>
+      <button id="menu-button" class="menu-button" type="button" aria-controls="nav-links" aria-expanded="false">Menu</button>
+      <nav id="nav-links" class="nav-links" aria-label="Hoofdnavigatie">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="vaardigheden.html">Vaardigheden</a>
+        <a href="projecten.html">Projecten</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button id="theme-button" class="theme-button" type="button" aria-label="Wissel tussen licht en donker">☾</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Introductie -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="label">MIJN PORTFOLIO</p>
+        <p id="greeting">Welkom</p>
+        <h1>Hoi, ik ben <span>Rayane.</span></h1>
+        <p>Ik hou van voetbal en vind game development leuk. Ik maak games op Roblox en werk met Lua scripting en 3D-modellen in Blender.</p>
+        <a class="button" href="projecten.html">Bekijk mijn projecten →</a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Grafische illustratie met de letter R">
+        <span class="image-symbol" aria-hidden="true">R</span>
+        <p>ROBLOX · LUA · BLENDER</p>
+      </div>
+    </section>
+
+    <!-- Drie onderdelen van mijn portfolio -->
+    <section class="section">
+      <p class="label">ONTDEK MEER</p>
+      <h2>Wat je hier vindt.</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="card-number">01</p>
+          <h3>Vaardigheden</h3>
+          <p>De tools die ik gebruik voor mijn games en modellen.</p>
+          <a href="vaardigheden.html">Bekijk vaardigheden →</a>
+        </article>
+        <article class="card">
+          <p class="card-number">02</p>
+          <h3>Projecten</h3>
+          <p>Een plek voor mijn games en 3D-modellen.</p>
+          <a href="projecten.html">Bekijk projecten →</a>
+        </article>
+        <article class="card">
+          <p class="card-number">03</p>
+          <h3>Contact</h3>
+          <p>Bekijk mijn contactpagina.</p>
+          <a href="contact.html">Naar contact →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- De deadline is voorlopig: controleer hem bij de docent. -->
+    <section class="countdown">
+      <div>
+        <p class="label">OP WEG NAAR DE DEADLINE</p>
+        <h2>Nog even te gaan.</h2>
+        <p>Voorlopige datum: 18 december 2026. Controleer de deadline bij de docent.</p>
+      </div>
+      <div class="count-box" aria-label="Tijd tot de voorlopige deadline">
+        <span><strong id="days">00</strong> dagen</span>
+        <span><strong id="hours">00</strong> uren</span>
+        <span><strong id="minutes">00</strong> min</span>
+        <span><strong id="seconds">00</strong> sec</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Rayane · Portfolio</p>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <!-- Deze melding is een voorbeeld voor het schoolproject. -->
+  <div id="cookie-box" class="cookie-box">
+    <div class="container cookie-inner">
+      <div>
+        <strong>Cookiekeuze</strong>
+        <p>Deze site gebruikt een cookie om je keuze te onthouden. Er zijn geen advertentiecookies.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button id="cookie-reject" type="button">Weigeren</button>
+        <button id="cookie-accept" type="button">Accepteren</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
